@@ -8,17 +8,15 @@ Install
 
 Install with::
 
-    pip install -e git+https://github.com/alendit/sphinx-pyreverse.git#egg=sphinx-pyreverse
+	pip install -e git+https://github.com/alendit/sphinx-pyreverse.git#egg=sphinx-pyreverse
 
 Usage
 ------
 
-Add "sphinx_pyreverse" to the extensions list in your conf.py (make sure it is in the PYTHONPATH).
+Add "sphinx_pyreverse" to your conf.py (make sure it is in the PYTHONPATH).
 
-Call the directive with path to python module as content. The ``:classes:`` and ``:packages:`` flags specify which UML diagrams to show.::
+Call the directive with path to python module as content::
 
-    .. uml:: {{modulename}}
-        :classes:
-        :packages:
-    
+	.. uml:: {{path to the module}}
+        
 Requires pyreverse from pylint.
